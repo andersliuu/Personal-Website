@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@200;600&family=Emblema+One&family=Flavors&family=Rubik+Dirt&family=Rubik+Microbe&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- (Part 2: CSS, Question 0) Font import here. If you don't know what this is yet, don't worry, we cover this in the Part 2 of the homework.-->
+    <title>Your Name Here</title>
+</head>
+<body>
+    <div id=container>
+        <!-- Question 0. Add an image here (a picture of you!) Make sure it's a square. -->
+        <img src="002003320.jpg" class="center">
+        <h1>Anders Liu</h1>
+        <!-- Question 1. Add headings to each of these sections! Make this heading smaller than your name.-->
+        <section id="education">
+            <h2>Education</h2>
+            <!-- Question 2. Fill this in with details about your degree, major(s), and coursework. Use at least 1 header tag (h3, b, or em). -->
+            <p><b>University of California, Berkeley</b> Computer Science, B.A., Minor in Data Science.</p>
+            <p><b>Coursework</b></p>
+            <p>Data Structures (COMPSCI 61B)</p>
+            <p>The Structure and Interpretation of Computer Programs (COMPSCI 61A)</p>
+            <p>Discrete Mathematics and Probability Theory (COMPSCI 70)</p>
+            <p>Foundations of Data Science (DATA 8)</p>
+            <p>Linear Algebra and Differential Equations (MATH 54)</p>
+            <p>Calculus 1 and 2 (MATH 1A & 1B)</p>
+            <p><em>(For more information, refer to the UC Berkeley Course Catalog)</em></p>
+        </section>
+        <section id="experience">
+            
+            <h2>Experience</h2>
+            <!-- Question 3a. Create 2 to 3 divs with the same class (experience-list-item), and fill them in with your work experiences. -->
+            
+            <div class="experience-wrapper">
+
+            <div class="experience-list-item">
+                <h3>Undergraduate Lab at Berkeley (ULAB): Physics and Astronomy Division– <em>Mentee</em></h3>
+                <ul>
+                    <!-- Question 3b. Fill this in with some bulletpoints on things you did. -->
+                    <li>Worked in the Undergraduate Lab at Berkeley’s (ULAB) Physics and Astronomy Division for two semesters with a small research group and upperclassman mentor.</li>
+                    <li>My group’s research project was an attempt to observe and obtain a light curve from a potential transiting exoplanet with the hope of confirming our object of observation as an exoplane</li>
+                    <li>Worked with MIT Transiting Exoplanet Survey Satellite (TESS) data, AstroimageJ, as well as with Professor Gaspard and the Leuschner Telescope at UC Berkeley</li>
+                    <li>Attended weekly lectures on programming in the context of research, public speaking/presenting, statistics, probability, and utilizing Python libraries such as NumPy, Pandas, and Matplotlib</li>
+                </ul>
+            </div>
+            <div class="experience-list-item">
+                <h3>Mosaic Boulders– <em>Front Desk Staff</em></h3>
+                <ul>
+                    <li>Coordinated social events</li>
+                    <li>Assisted with organizing inventory and maintaining the facility</li>
+                    <li>Worked to accomodate guests' needs at all times</li>
+                    <li>Sold memberships and merchandise</li>
+                    <li>Informed people of gym policies and answered any questions anyone had</li>
+                </ul>
+            </div>
+            </div>
+            <!-- Question 3c. Create a div that contains all the experience-list-item divs named "experience-wrapper"! You'll need this later. -->
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <!-- Question 4a. Create a few project-list-items divs. Fill these in with your favorite projects! -->
+            <div class="project-wrapper">
+            <div class="project-list-item">
+                <h3>World Generation</h3>
+                <p>Designed and implemented a 2D tile-based world exploration engine. The first part of this project involved the creation of an algorithm that was able to generate worlds in a pseudo-random manner (via integer seed inputs). The second part of the project made it so that generated worlds could be interacted with–that is, users could control a customizable avatar with the W, A, S, and D keys to explore the generated worlds. This was a project in COMPSCI 61B at UC Berkeley. Watch a demo video <a href="https://www.youtube.com/watch?v=-FN94KGwGeg&ab_channel=AndersLiu">here!</a></p> 
+            </div>
+            <div class="project-list-item">
+                <h3>Wordnet</h3>
+                <p>Utilized the Wordnet dataset Along with the Google NGram Dataset to build the back-end part of a browser-based tool for exploring the history of word usage in English texts (front-end code provided). This was a project in COMPSCI 61B at UC Berkeley; from the CS61B course page: “WordNet is a ‘semantic lexicon for the English language’ that is used extensively by computational linguists and cognitive scientists; for example, it was a key component in IBM’s Watson. WordNet groups words into sets of synonyms called synsets and describes semantic relationships between them. One such relationship is the is-a relationship, which connects a hyponym (more specific synset) to a hypernym (more general synset).” The tool I implemented was capable of displaying histograms of word usage as well as displaying common hyponyms of lists of words. </p>
+            </div>
+            <div class="project-list-item">
+                <h3>Percolation Modeling</h3>
+                <p>Wrote a program to estimate the value of the percolation threshold via Monte Carlo simulation. Utilized the Weighted Quick Union data structure to model and calculate a percolation threshold. This was a project in COMPSCI 61B at UC Berkeley. </p>
+            </div>
+            <!-- Question 4b. Create a div that contains all the projects-list-item divs named "project-wrapper". You'll need this later! -->
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact me <a href="https://www.instagram.com/andersliu_/">here!</a></h2>
+    
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+/* General Set-up (Fonts, margins, background colors) */
+
+/* Question 0. Import a font and make all text in the body using that font. Check the homework instructions for more information!*/
+
+body {
+    margin: 50px auto;
+    max-width: 1000px;
+    color: #1d3557;
+    font-family: 'Anek Bangla', sans-serif;
+}
+
+img {
+    border-radius: 67% 33% 29% 71% / 52% 32% 68% 48% ;
+    width: 100px; 
+    transition: ease-in-out 1s;
+    margin: 0px
+}
+    
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+
+h1 {
+    font-family: 'Flavors', cursive;
+    font-size: 65px;
+    transition: ease-in-out 0.5s;
+    text-align: center;
+    margin: 30px;
+    padding: 30px;
+}
+
+h2 {
+    font-family: 'Rubik Microbe', cursive;
+    font-size: 40px;
+    margin: 10px 15px;
+    transition: ease-in-out 0.5s;
+}
+
+/* Question 1. Add a hover effect for your h1 tag and img tag! You can change the background-color, color, opacity, or anything you want.*/
+h1:hover {
+    color: #77a0ff;
+    font: Roboto;
+}
+
+
+img:hover {
+    border-radius: 25% 75% 78% 22% / 45% 77% 23% 55% ;
+    transition: 1s ease;
+}
+
+
+/* Question 2. Add margin, padding, and borders to section tags! */
+section {
+    text-align: center;
+    border: 15px;
+    padding: 30px;
+    margin: 30px;
+}
+
+
+
+/* Question 3. Add different background colors for all the different sections, by selecting them via ids. */
+
+#education {
+background-color: #a0bcff;
+border-radius: 79% 21% 88% 12% / 19% 85% 15% 81% ;
+transition: 1s ease;
+}
+
+#education:hover{
+    border-radius: 10% 90% 18% 82% / 90% 20% 80% 10%; 
+    transition: 1s ease;
+    transition: 1s ease;
+}
+
+#experience {
+    background-color: #bed1fc;
+    border-radius: 15%;
+}
+
+#projects {
+    background-color: #a0bcff;
+    border-radius: 15%;
+}
+
+
+#contact {
+background-color: #bed1fc;
+border-radius: 22% 78% 49% 51% / 48% 28% 72% 52% ;
+transition: 1s ease; 
+}
+
+#contact:hover{
+    border-radius: 9% 91% 12% 88% / 53% 47% 53% 47%;
+    transition: 1s ease; 
+}
+
+
+/* Experience Section */
+
+/* Question 4a. This is a little tougher! Use CSS Flexbox to display your experiences as shown in the diagram.
+ Hint: If you're stuck with finding values that work, check the homework instructions document for some help!*/
+
+.experience-wrapper {
+    gap: 10px 10px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.experience-list-item {
+    /* Tip: Feel free to change anything here (e.g. border, background-color, etc.). 
+    Changing the padding and width might throws thiings off, but experiment with it and see what looks good. */
+    text-align: left;
+    width: 350px;
+    padding: 10px 20px;
+    background-color: #bed1fc; 
+    border-radius: 15px;
+    transition: 1s ease;
+    box-shadow: 10 10 10 10 #1d3557;
+}
+
+.experience-list-item:hover{
+    background-color: #a0bcff;
+    border-radius: 75px;
+    transition: 1s ease;
+}
+
+
+/* Projects Section */
+
+/* Question 5. Use CSS Flexbox or Grid and hover effects for the Projects Section, 
+but use different hover effects from the Experiences section! */
+
+.project-wrapper {
+    gap: 10px 10px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+
+.project-list-item {
+    text-align: left;
+    width: 350px;
+    padding: 10px 20px;
+    background-color: #a0bcff;
+    border-radius: 50px;
+    transition: 1s ease;
+}
+
+.project-list-item:hover {
+    background-color: #becffc;
+    border-radius: 75px;
+}
+
+
+
+/* Contact Section */
+
+/* Question 6. Make your link pretty! */
+a {
+    color: #1d3557;
+    transition: color .3s ease-in-out
+
+  }
+
+a:hover {
+    color: white;
+}
+
+/* Question 7. Let's make this a little more mobile-friendly! Use a media query/breakpoint to make
+project-list-item and experience-list-item divs have a width of 100% for smaller devices.*/
+
+/* Small devices (portrait tablets and large phones, 600px screen and up) */
+@media only screen and (max-width: 600px) {
+    .experience-list-item {
+        width: 100%; 
+    }
+}
